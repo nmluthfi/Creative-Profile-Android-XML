@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_second"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectangle"
+            />
+
+        <ImageButton
+            android:id="@+id/go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#333456"
+            android:src="@drawable/ic_expand_close"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Me"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:id="@+id/about_meTV"
+            />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="294dp"
+            android:layout_height="170dp"
+            app:cardCornerRadius="9dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/about_meTV"
+            android:layout_marginTop="18dp"
+            android:layout_centerHorizontal="true"
+            app:cardElevation="9dp"
+            app:cardPreventCornerOverlap="true"
+            android:id="@+id/cardProfile"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_width="78dp"
+                    android:layout_height="78dp"
+                    android:src="@drawable/circle"
+                    android:background="@drawable/luthfi"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/profile"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nur Muhammad Luthfi"
+                    android:textSize="16dp"
+                    android:textColor="#000000"
+                    android:layout_below="@id/profile"
+                    android:alpha=".8"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/namaTV"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UI/UX Designer and Programmer"
+                    android:textSize="14dp"
+                    android:textColor="#000000"
+                    android:layout_below="@id/namaTV"
+                    android:alpha=".54"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/descTV"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="294dp"
+            android:layout_height="370dp"
+            app:cardCornerRadius="9dp"
+            android:layout_below="@id/cardProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            app:cardElevation="9dp"
+            app:cardPreventCornerOverlap="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biography"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/bioHeadlineTV"
+                    />
+
+                <View
+                    android:layout_width="60dp"
+                    android:layout_height="2dp"
+                    android:background="#000000"
+                    android:visibility="visible"
+                    android:layout_below="@id/bioHeadlineTV"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="16dp"
+                    android:id="@+id/strip"
+                    />
+
+                <TextView
+                    android:layout_width="262dp"
+                    android:layout_height="172dp"
+                    android:text="My name is Nur Muhammad Luthfi. Call me Luthfi for short. Currently I'm a Informatics Engineering Student at Telkom University, Bandung. I do some UI/UX designer and code. I have interest about Artificial Intellegent and Electric Cars.
+
+Get in touch with me through my social media below.
+                "
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:alpha="0.54"
+                    android:id="@+id/descBioTV"
+                    android:layout_below="@id/strip"
+                    />
+
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/circle"
+                    android:background="@drawable/linkedin"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_below="@id/descBioTV"
+                    android:id="@+id/linkedin"
+                    />
+
+
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/circle"
+                    android:background="@drawable/facebook"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_below="@id/linkedin"
+                    android:id="@+id/facebook"
+                    />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/circle"
+                    android:background="@drawable/dribbble"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_below="@id/facebook"
+                    android:id="@+id/dribbble"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/linkedin"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_toRightOf="@id/linkedin"
+                    android:alpha="0.54"
+                    android:fontFamily="sans-serif"
+                    android:text="Nur Muhammad Luthfi"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/facebook"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_toRightOf="@id/facebook"
+                    android:alpha="0.54"
+                    android:fontFamily="sans-serif"
+                    android:text="Nur Muhammad Luthfi"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/dribbble"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_toRightOf="@id/dribbble"
+                    android:alpha="0.54"
+                    android:fontFamily="sans-serif"
+                    android:text="Nur Muhammad Luthfi"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>
+
